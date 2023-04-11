@@ -1,0 +1,79 @@
+:root {
+  --cor-primaria: #effffd;
+  --cor-segundaria: #42c2ff;
+  --cor-terciaria: #b8fff9;
+  --cor-rover: #85f4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--cor-primaria);
+  font-size: 16px;
+  color: var(--cor-terciaria);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.header {
+  width: 100%;
+  padding: 60px;
+  text-align: center;
+  background: var(--cor-segundaria);
+  color: white;
+}
+
+.main {
+  color: black;
+  padding-left: 10px;
+}
+
+.imagem {
+  width: 20%;
+  height: 20%;
+}
+
+.div {
+  width: 100%;
+  display: flex;
+  align-items: normal;
+  justify-content: left;
+  gap: 10px;
+}
+
+.thead {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+}
+
+.adicionar {
+  display: flex;
+  flex-direction: column;
+}
+
+.adicionar input {
+  width: 80%;
+}
+
+.adicionar input.biografia {
+  width: 100%;
+  height: 150px;
+}
+
+.footer {
+  background-color: var(--cor-terciaria);
+  color: black;
+  padding: 24px;
+  text-align: center;
+}
