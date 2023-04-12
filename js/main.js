@@ -21,7 +21,6 @@ function mudarInformacoes() {
 }
 
 function adicionarInformacoes() {
-
   const nome = document.getElementById("nome");
   const idade = document.getElementById("idade");
   const localizacao = document.getElementById("localizacao");
@@ -31,16 +30,12 @@ function adicionarInformacoes() {
   const idadeFinal = idade.value;
   const localizacaoFinal = localizacao.value;
   const biografiaFinal = biografia.value;
-  console.log(nomeFinal + idadeFinal + localizacaoFinal + biografiaFinal)
+  console.log(nomeFinal + idadeFinal + localizacaoFinal + biografiaFinal);
 
   const informaçoesHTML = document.getElementById("informacoesHTML");
   informaçoesHTML.innerHTML = "";
 
-
-
-
-      informaçoesHTML.innerHTML +=
-    `
+  informaçoesHTML.innerHTML += `
     <thead class="thead">
     <p><strong>Nome:</strong> ${nomeFinal}</p>
     <p><strong>Idade:</strong> ${idadeFinal} Anos</p>
@@ -48,7 +43,7 @@ function adicionarInformacoes() {
     <p><strong>Biografia:</strong> ${biografiaFinal}</p>
     <button class="botaoFormulario" onclick="mudarInformacoes()">Mudar Informaçoes</button>
   </thead>
-    `
+    `;
 
-  console.log(nome + idade + localizacao + biografia)
+  console.log(nome + idade + localizacao + biografia);
 }

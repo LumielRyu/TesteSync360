@@ -2,7 +2,6 @@
   --cor-primaria: #effffd;
   --cor-segundaria: #42c2ff;
   --cor-terciaria: #b8fff9;
-  --cor-rover: #85f4ff;
 }
 
 * {
@@ -15,11 +14,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   background-color: var(--cor-primaria);
-  font-size: 16px;
-  color: var(--cor-terciaria);
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -70,7 +65,7 @@ body {
 
 .adicionar input.biografia {
   height: 42px;
-  width : 100%;
+  width: 100%;
 }
 
 .footer {
@@ -83,17 +78,17 @@ body {
 @media (max-width: 800px) {
 
   .header {
-      padding: 10%;
+    padding: 10%;
   }
 
   .div {
-      flex-direction: column-reverse;
-      align-items: center;
-      padding: 5%;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5%;
   }
 
   .main.div {
-      width: auto;
+    width: auto;
   }
 
   .imagem {
