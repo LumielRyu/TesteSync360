@@ -1,8 +1,4 @@
 function mudarInformacoes() {
-  // let infoNome = prompt("Nome:");
-  // let infoIdade = prompt("Idade:");
-  // let infoLocalizacao = prompt("Localizacao:");
-  // let infoBiografia = prompt("Biografia:");
   const informaçoesHTML = document.getElementById("informacoesHTML");
   informaçoesHTML.innerHTML = "";
 
@@ -10,32 +6,18 @@ function mudarInformacoes() {
   <thead class="thead">
     <form action="" class="adicionar" id="novoItem">
       <label for="informacoes" class="informacoes"><strong>Nome:</strong></label>
-      <input type="text" name="nome" id="nome"/>
+      <input type="text" name="nome" id="nome" size="100"/>
       <label for="informacoes" class="informacoes"><strong>Idade:</strong></label>
-      <input type="text" name="idade" id="idade"/>
+      <input type="number" name="idade" id="idade" size="100"/>
       <label for="informacoes" class="informacoes"><strong>Localização:</strong></label>
-      <input type="text" name="localizacao" id="localizacao"/>
+      <input type="text" name="localizacao" id="localizacao" size="100"/>
       <label for="informacoes" class="informacoes"><strong>Biografia:</strong></label>
-      <input class="biografia" type="text" name="biografia" id="biografia"/>
-    </form>
+    <textarea id="biografia" rows="10"></textarea>
     <button class="botaoFormulario" onclick="adicionarInformacoes()">
               Adicionar Informaçoes
             </button>  
   </thead>
     `;
-
-
-
-  //   informaçoesHTML.innerHTML +=
-  //   `
-  //   <thead class="thead">
-  //   <p><strong>Nome:</strong> ${infoNome}</p>
-  //   <p><strong>Idade:</strong> ${infoIdade} Anos</p>
-  //   <p><strong>Localização:</strong> ${infoLocalizacao}</p>
-  //   <p><strong>Biografia:</strong> ${infoBiografia}</p>
-  //   <button class="botaoFormulario" onclick="mudarInformacoes()">Mudar Informaçoes</button>
-  // </thead>
-  //   `
 }
 
 function adicionarInformacoes() {
